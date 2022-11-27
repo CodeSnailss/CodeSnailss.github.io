@@ -1,55 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <script type="text/javascript" src="../JavaScript/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- 网页图标 -->
+    <link rel="shortcut icon" href="../img/022.ico">
+    <title>Gamer</title>
 </head>
 
 <body>
-    <center><h1>Hello world!</h1></center>
-    <hr color="red">
-    <ol type="I">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ol>
-    <hr color="orange">
-    <ul type="⭐">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-    <hr color="yellow">
-    <table border="0" width="500" cellspace="0">
-        <tr align="center">
-            <th>姓名</th>
-            <th>性别</th>
-            <th>年龄</th>
-            <th>数值</th>
-        </tr>
-        <tr align="center">
-            <td>冯浩东</td>
-            <td>男</td>
-            <td>20</td>
-            <td>60</td>
-        </tr>
-        <tr align="center">
-            <td>马峥吉</td>
-            <td>男</td>
-            <td>20</td>
-            <td>75</td>
-        </tr>
-        <tr align="center">
-            <td>李炫霈</td>
-            <td>男</td>
-            <td>21</td>
-            <td>67</td>
-        </tr>
-    </table>
+    <!-- 头顶图片 -->
+    <div class="header">
+        <!-- <img src="../img/018.png"> -->
+    </div>
+    <!-- 头部菜单栏 -->
+    <div class="topnav">
+        <ul class="menu">
+            <li class="item">
+                <a href="主页.html" target="con" class="link">
+                    <ion-icon name="home-outline" aria-hidden="true"></ion-icon>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#" class="link">
+                    <ion-icon name="planet-outline" aria-hidden="true"></ion-icon>
+                    <span>动态</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#" class="link">
+                    <ion-icon name="add-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>发布</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="chatBox.html" target="con" class="link">
+                    <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
+                    <span>消息</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#" class="link">
+                    <ion-icon name="person-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>我的</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 内容 -->
+    <div class="container clearfix">
+        <!-- 侧边导航栏 -->
+        <div class="shell">
+            <a href="#" class="box">
+                <ion-icon name="list"></ion-icon><span>工具列表</span>
+            </a>
+            <a href="#" class="box">
+                <ion-icon name="earth-outline"></ion-icon><span>好友</span>
+            </a>
+            <a href="#" class="box">
+                <ion-icon name="game-controller"></ion-icon><span>游戏库</span>
+            </a>
+            <a href="#" class="box">
+                <ion-icon name="file-tray-full-outline"></ion-icon><span>我的资源</span>
+            </a>
+            <a href="#" class="box">
+                <ion-icon name="create"></ion-icon><span>论坛</span>
+            </a>
+            <a href="#" class="box">
+                <ion-icon name="arrow-up-circle-outline"></ion-icon><span>上传</span>
+            </a>
+            <a href="#" class="box">
+                <ion-icon name="arrow-down-circle-outline"></ion-icon><span>下载</span>
+            </a>
+            <a href="#" class="box">
+                <ion-icon name="settings-outline"></ion-icon><span>设置</span>
+            </a>
+        </div>
+        <!-- 右侧内容 -->
+        <div class="rightColumn">
+            <iframe class="changePag" name="con" src="https://www.vilipix.com/"></iframe>
+        </div>
+    </div>
+
+    <!-- 底部区域：版权等信息 -->
+    <div class="footer">
+        <h2>Copyright &copy;冯浩东版权所有</h2>
+    </div>
+
 </body>
 
 </html>
